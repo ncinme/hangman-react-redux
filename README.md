@@ -1,9 +1,8 @@
-###### This is Final and Clean Version with Redux
-
-<h1>Hangman</h1>
+# Hangman
 This is computer version of the classic Hangman game. It is built for one player.
+<br>
 
-How to Play:
+## How to Play:
 
 1. Click on ‘Start Game’.
 2. You have 10 chances to guess the right word.
@@ -14,23 +13,40 @@ How to Play:
 7. You win when you get every letter of the word before hangman drawing finishes.
 8. You lose if you guess 10 incorrect letters.
 
-# Getting Started with Create React App
+## Install and Run your app on your local machine
 
-## Available Scripts
+### Update Node Package Manager: 
+npm install -g npm@latest 
 
-The first two scripts are important to run Hangman app.
+### Update Nodejs: 
+npm install -g node@latest
 
-In the project directory, you can run:
 
-### `npm run wordListConverter`
+### Install React App
+npx create-react-app@latest hangman-react-redux
 
-Converts the any text file in ./src folder to an array and write it to wordList.js file,
+### Install Redux Tool Kit
+Go to the newly created project directory 'hangman-react-redux'\
+npm install --save @reduxjs/toolkit react-redux
+
+### Clone this repository 
+Clone 'master' repo to the project direcotry 'hangman-react-redux'
+
+### Run Scripts
+
+**Run follwoing two scripts to launch Hangman app.**
+
+In the project directory, run:
+
+#### `npm run wordListConverter`
+
+This script converts the any text file in ./src folder to an array and writes it to wordList.js file,
 which can be later referred to select a random word for Hangman game.
 I have used 'word_list_10000.txt' in this app, and alreadly created wordList.js.
 
-Reading/Writing file is node js methods, thus this script has to be run separately.
+Reading/Writing file are node js methods, thus this script has to be run separately.
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -38,14 +54,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-Follwoing are the standard scripts created by create-react-app.
+### Follwoing are the standard scripts created by create-react-app.
 
-### `npm test`
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -55,7 +71,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -65,32 +81,32 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+#### Code Splitting
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+#### Analyzing the Bundle Size
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+#### Making a Progressive Web App
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+#### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+#### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+#### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
