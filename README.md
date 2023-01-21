@@ -20,29 +20,29 @@ Create a new project folder
 
 ### Update Node Package Manager:
 
-npm install -g npm@latest
+`npm install -g npm@latest`
 
 ### Update Nodejs:
 
-npm install -g node@latest
+`npm install -g node@latest`
 
 ### Install React App
 
-npx create-react-app@latest hangman-react-redux
+`npx create-react-app@latest hangman-react-redux`
 
 ### Clone this repository
 
-Clone 'master' repo to the project direcotry 'hangman-react-redux'\
-Go to the newly created project directory 'hangman-react-redux' and run following commands\
-cd hangman-react-redux
-git remote add origin https://github.com/ncinme/hangman-react-redux.git
-git fetch origin master
-git reset --hard origin/master
+Clone 'master' repo to the project direcotry 'hangman-react-redux'.    
+Go to the newly created project directory 'hangman-react-redux' and run following commands:  
+`cd hangman-react-redux`  
+`git remote add origin https://github.com/ncinme/hangman-react-redux.git`  
+`git fetch origin master`  
+`git reset --hard origin/master`
 
 ### Install Redux Tool Kit
 
-In the project directory 'hangman-react-redux', run following commands\  
-npm install --save @reduxjs/toolkit react-redux
+In the project directory 'hangman-react-redux', run following commands  
+`npm install --save @reduxjs/toolkit react-redux`
 
 ### Run Scripts
 
@@ -52,11 +52,11 @@ In the project directory, run:
 
 #### `npm run wordListConverter`
 
-Note: No need to run the command unless you want to use a new dictionary file.\
+**Note:** No need to run the command unless you want to use a new dictionary file.  
 I have used 'word_list_10000.txt' in this app, and alreadly created wordList.js.
 
 This script converts the any text file in ./src folder to an array and writes it to wordList.js file,
-which can be later referred to select a random word for Hangman game.\
+which can be later referred to select a random word for Hangman game.  
 
 Reading/Writing file are node js methods, thus this script has to be run separately.
 
