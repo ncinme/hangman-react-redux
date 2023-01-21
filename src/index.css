@@ -1,13 +1,144 @@
+/* Element level style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Main container style */
+.main-container {
+  align-items: center;
+  min-width: 400px;
+  max-width: 35rem;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #D0B8A8;
+}
+
+/* Header component style */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Rules component style */
+h4 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.rules-list {
+  padding: 0;
+  margin: 0;
+}
+
+.rules-list li {
+  font-size: 1rem;
+}
+
+/* Results style */
+.results-container {
+  display: flex;
+  flex-flow: row;
+  border: 1px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #85586F;
+  color: white;
+}
+
+.resutls-score {
+  width: 25%;
+}
+
+/* Hangman State Style */
+.state-container {
+  display: flex;
+  flex-flow: row;
+  max-width: 35rem;
+  align-items: center;
+}
+
+.state-img {
+  width: 7rem;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.state-dash {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 3rem;
+}
+
+.btn {
+  background: #85586F;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+/* Alphabet component style */
+.alpha-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 30rem;
+  margin: 1rem 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.icon {
+  padding: 2px;
+  margin: 5px;
+  border: 1px solid steelblue;
+  border-radius: 3px;
+  box-shadow: 2px 1px 3px gray;
+  background-color: rgb(136, 160, 180);
+  cursor: pointer;
+
+}
+
+.icon button {
+  font-size: 20px;
+  background-color: rgb(33, 114, 180);
+  color: white;
+  width: 1.9rem;
+  border: 1px solid steelblue;
+  cursor: pointer;
+
+}
+
+.icon button:hover {
+  font-size: 18px;
+}
+
+.button-green {
+  background-color: rgb(14, 240, 14) !important;
+}
+
+.button-red {
+  background-color: rgb(177, 41, 41) !important;
+}
+
+.button-grey {
+  background-color: grey !important;
 }

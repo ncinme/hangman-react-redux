@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+/* Requirement Statement: Create a Hangman game using the Create React App Starter Kit.
+   - The user should be able to start/restart the game.
+   - The user should be clearly informed if they have “won” or “lost” the game.
+   - The user should easily be able to request “help” that will inform the user about the rules of the game.
+*/
+
+import Body from "./components/Body";
+import Header from "./components/Header";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <Header />
+      <Body />
     </div>
   );
 }

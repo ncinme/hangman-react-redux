@@ -1,10 +1,34 @@
-# Getting Started with Create React App
+###### This is Final and Clean Version with Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>Hangman</h1>
+This is computer version of the classic Hangman game. It is built for one player.
+
+How to Play:
+
+1. Click on ‘Start Game’.
+2. You have 10 chances to guess the right word.
+3. Number of blank spaces represent number of letters in the secret word.
+4. Start guessing the word by clicking on a letter.
+5. If your guess is correct, the letter is revealed.
+6. If your guess is incorrect, you lose a chance.
+7. You win when you get every letter of the word before hangman drawing finishes.
+8. You lose if you guess 10 incorrect letters.
+
+# Getting Started with Create React App
 
 ## Available Scripts
 
+The first two scripts are important to run Hangman app.
+
 In the project directory, you can run:
+
+### `npm run wordListConverter`
+
+Converts the any text file in ./src folder to an array and write it to wordList.js file,
+which can be later referred to select a random word for Hangman game.
+I have used 'word_list_10000.txt' in this app, and alreadly created wordList.js.
+
+Reading/Writing file is node js methods, thus this script has to be run separately.
 
 ### `npm start`
 
@@ -13,6 +37,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+Follwoing are the standard scripts created by create-react-app.
 
 ### `npm test`
 
